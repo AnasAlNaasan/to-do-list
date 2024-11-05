@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4aaee8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #478edf;
+}
+
+.tasks {
+    list-style: none;
+    padding: 0;
+    background-image: linear-gradient();
+}
+
+.tasks .task.done {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+.task {
+    background-color: #eee;
+    padding: 10px;
+    padding-top: 15px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 4px;
+}
+
+.del {
+    background-color: #2bd3ed;
+    padding: 5px 10px;
+    margin-top: 15px;
+    margin: auto 0;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+
+.del:hover {
+    background-color: #52b4cc;
+}
+
+@media (max-width:400px){
+
+    .container{
+        width: 100%;
+        margin: 0;
+        padding: 20px 0;
+    }
+}
